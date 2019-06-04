@@ -6,6 +6,4 @@ SELECT account,
   destinationaddress,
   action
 FROM vpc_flow_logs
-WHERE action = 'REJECT'
-GROUP BY interfaceid
-ORDER BY account DESC;
+WHERE action = 'REJECT';

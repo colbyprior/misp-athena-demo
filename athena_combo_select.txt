@@ -1,14 +1,12 @@
 # SEARCH FOR FLOW LOGS CONTAINING THREAT INDICATORS
 
-SELECT vpc_flow_logs.account,
-  vpc_flow_logs.interfaceid,
-  vpc_flow_logs.sourceaddress,
-  vpc_flow_logs.destinationaddress,
-  vpc_flow_logs.action,
-  misp_dest_indicators.attributeid,
-  misp_dest_indicators.eventid
-FROM vpc_flow_logs,
-  misp_dest_indicators
-WHERE vpc_flow_logs.destinationaddress = vpc_flow_logs.destinationaddress
-GROUP BY interfaceid
-ORDER BY account DESC;
+SELECT v.account,
+  v.interfaceid,
+  v.sourceaddress,
+  v.destinationaddress,
+  v.action,
+  m.attributeid,
+  m.eventid
+FROM vpc_flow_logs v,
+  Misp_dest_indicators m
+WHERE v.destinationaddress = m.destinationaddress;
