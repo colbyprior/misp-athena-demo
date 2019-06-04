@@ -6,7 +6,7 @@ This project has some snippets for:
 - Setting up Athena database for VPC Flow logs
 - Querying threat indicators in VPC Flow logs from MISP data with Athena
 
-![Architecture](https://raw.githubusercontent.com/colbyprior/misp-athena-demo/master/docs/Misp_Flow_logs.png)
+![Architecture](https://raw.githubusercontent.com/colbyprior/misp-athena-demo/master/Misp_Flow_logs.png)
 
 ## Reference points
 - [MISP](https://github.com/MISP/MISP)
