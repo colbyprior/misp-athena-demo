@@ -1,0 +1,11 @@
+# VPC FLOW LOG SEARCH
+
+SELECT account,
+  interfaceid,
+  sourceaddress,
+  destinationaddress,
+  action
+FROM vpc_flow_logs
+WHERE action = 'REJECT'
+GROUP BY interfaceid
+ORDER BY account DESC;

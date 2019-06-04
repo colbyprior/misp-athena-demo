@@ -1,0 +1,5 @@
+# ATHENA SEARCH QUERY FOR MISP INDICATORS
+
+SELECT *
+FROM misp_dest_indicators
+WHERE destinationaddress = '8.8.8.8';

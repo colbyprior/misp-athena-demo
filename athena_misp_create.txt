@@ -1,0 +1,11 @@
+# MISP IP DEST INDICATORS ATHENA DB
+
+CREATE EXTERNAL TABLE IF NOT EXISTS misp_dest_indicators (
+  attributeid int,
+  eventid int,
+  destinationaddress string
+)
+PARTITIONED BY (dt string)
+ROW FORMAT DELIMITED
+FIELDS TERMINATED BY ' '
+LOCATION 's3://your_log_bucket/vpcflowlogs/';
