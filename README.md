@@ -15,3 +15,4 @@ This project has some snippets for:
 - [Guard Duty Custom Rules](https://aws.amazon.com/blogs/security/how-to-automate-import-third-party-threat-intelligence-feeds-into-amazon-guardduty/)
 - [Athena Boto3](https://boto3.amazonaws.com/v1/documentation/api/latest/reference/services/athena.html)
 - [How I made my diagrams](https://cloudcraft.co/)
+- [MISP cloud](https://github.com/MISP/misp-cloud)
